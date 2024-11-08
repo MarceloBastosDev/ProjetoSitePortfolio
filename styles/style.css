@@ -24,3 +24,42 @@
         gap: 0rem !important;
     }
 }
+
+/* Estilos para troca de imagem */
+.hover-image-container {
+    position: relative;
+    width: 80;
+}
+
+.hover-image-container img {
+    transition: opacity 0.3s ease;
+}
+
+.hover-image-container:hover img.first-image {
+    opacity: 0;
+    /* Oculta a imagem original ao passar o mouse */
+}
+
+.hover-image-container:hover img.second-image {
+    opacity: 1;
+    /* Exibe a nova imagem */
+    position: absolute;
+    /* Garante que a imagem se posicione sobre a primeira */
+    top: 50%;
+    /* Alinha a imagem verticalmente ao meio */
+    left: 50%;
+    /* Alinha a imagem horizontalmente ao meio */
+    transform: translate(-50%, -50%);
+    /* Ajusta para centralizar perfeitamente */
+}
+
+
+.first-image {
+    opacity: 1;
+    /* Imagem original visível por padrão */
+}
+
+.second-image {
+    opacity: 0;
+    /* Imagem de hover invisível por padrão */
+}
