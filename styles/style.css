@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+/* Estilos específicos para telas de 360px de largura (Galaxy S9+) */
+/* ajuste no menu nav --- que dor de cabeça! --- */
+@media (max-width: 360px) {
+
+    .icon-btn {
+        width: 1.75rem !important;
+        height: 1.75rem !important;
+        padding: 0.25rem !important;
+
+    }
+
+    .icon-img {
+        width: 1.25rem !important;
+        height: 1.25rem !important;
+    }
+
+    .flex {
+        gap: 0rem !important;
+    }
+}
