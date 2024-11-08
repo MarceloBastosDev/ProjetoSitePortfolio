@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/styles/output.css" rel="stylesheet">
+        <title>Portfolio Marcelo Bastos</title>
+        <script
+            src="https://cdn.jsdelivr.net/npm/i18next@21.6.1/i18next.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.0.1/i18nextBrowserLanguageDetector.min.js"></script>
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body class="bg-gray-100 text-gray-800">
+
+        <header class="fixed w-full z-10 top-0 bg-gray-900 text-white py-3">
+            <div
+                class="container mx-auto flex justify-between items-center px-4">
+                <h4
+                    class="text-sm font-fira border text-black border-yellow-500 bg-yellow-500 rounded-full hover:scale-110 duration-500 p-2 font-thin cursor-default">
+                    &lt;marcelobastos&gt;
+                </h4>
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-4">
+                        <li><a class="hover:text-gray-400 font-mono"
+                                href="/index.html">Portfolio</a></li>
+                        <li><a class="hover:text-gray-400 font-mono"
+                                href="/src/sobremim.html">Sobre Mim</a></li>
+                        <li><a class="hover:text-gray-400 font-mono"
+                                href="/src/skills.html">Skills</a></li>
+                    </ul>
+                </nav>
+
+                <div class="flex items-center space-x-4">
+
+                    <a href="https://courageous-daifuku-5620d2.netlify.app/"
+                        target="_blank"
+                        id="curriculonav"
+                        class="font-fira text-yellow-400 font-bold hidden sm:block">Currículo
+                        HTML</a>
+                    <a href="https://github.com/MarceloBastosDev"
+                        class="border border-yellow-500 bg-yellow-500 rounded-full p-2 hover:scale-110 duration-300"
+                        target="_blank">
+                        <img src="/assets/icons/github.png" alt="github"
+                            class="w-5 h-5 md:w-9 md:h-9">
+                    </a>
+                    <a href="https://www.linkedin.com/in/vmarcelobastos/"
+                        class="border border-yellow-500 bg-yellow-500 rounded-full p-2 hover:scale-110 duration-300"
+                        target="_blank">
+                        <img src="/assets/icons/linkedin.png" alt="linkedin"
+                            class="w-5 h-5 md:w-9 md:h-9">
+                    </a>
+                    <a href="https://wa.me/+5551981231848"
+                        class="border border-yellow-500 bg-yellow-500 rounded-full p-2 hover:scale-110 duration-300"
+                        target="_blank">
+                        <img src="/assets/icons/whatsapp.png" alt="whatsapp"
+                            class="w-5 h-5 md:w-9 md:h-9">
+                    </a>
+                </div>
+
+                <!-- Menu hamburguer para telas menores -->
+                <div class="md:hidden">
+                    <button id="menuButton1"
+                        class="text-yellow-400 font-bold">☰</button>
+                </div>
+            </div>
+
+            <!-- Menu dropdown para telas menores -->
+            <div id="menuDropdown1"
+                class="hidden md:hidden bg-gray-800 text-white p-4">
+                <ul>
+                    <li><a class="hover:text-gray-400"
+                            href="/index.html">Portfolio</a></li>
+                    <li><a id="sobredropdown" class="hover:text-gray-400"
+                            href="/src/sobremim.html">Sobre Mim</a></li>
+                    <li><a id="skilldropdown" class="hover:text-gray-400"
+                            href="/src/skills.html">Skills</a></li>
+                    <li><a id="curriculodropdown"
+                            class="text-yellow-400 font-bold"
+                            href="https://courageous-daifuku-5620d2.netlify.app/"
+                            target="_blank">Currículo HTML</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- Conteúdo principal -->
+        <div
+            class="md:flex-row md:space-x-10 md:ml-10 md:mr-10 md:pr-20 lg:pl-32 flex flex-col items-center border-4 rounded-lg border-yellow-500 mt-32">
+            <!-- Primeira Imagem -->
+
+            <div
+                class="border border-black w-80 my-5 p-2 hover:scale-110 duration-300 relative">
+                <img src="/assets/img/sayajinp.jpeg" alt="Imagem">
+
+                <!-- Ícone de Interrogação -->
+                <div
+                    class="absolute top-2 right-2 p-2 rounded-full text-white cursor-pointer"
+                    onclick="togglePopup('popup-text-1')">
+                    <i class="fa fa-question-circle"
+                        style="font-size:24px;"></i>
+                </div>
+
+                <!-- Caixa de Texto -->
+                <div id="popup-text-1"
+                    class="font-fira hidden absolute top-16 right-2 bg-white p-4 rounded shadow-md w-64 text-sm">
+                    Projetei um site responsivo utilizando HTML, CSS Tailwind, e
+                    JavaScript.
+                </div>
+
+                <a href="https://projeto-portfolio-rouge.vercel.app/index.html">
+                    <button id="btn-portfolio"
+                        class="font-fira w-full mt-4 p-2 bg-yellow-500 text-black rounded hover:bg-blue-600 duration-300">
+                        Site de Portfólio
+                    </button>
+                </a>
+            </div>
+
+            <!-- Segunda Imagem -->
+            <div
+                class="border border-black w-80 my-5 p-2 hover:scale-110 duration-300 relative">
+                <img src="/assets/img/sayajinp.jpeg" alt="Imagem">
+
+                <!-- Ícone de Interrogação -->
+                <div
+                    class="absolute top-2 right-2 p-2 rounded-full text-white cursor-pointer"
+                    onclick="togglePopup('popup-text-2')">
+                    <i class="fa fa-question-circle"
+                        style="font-size:24px;"></i>
+                </div>
+
+                <!-- Caixa de Texto -->
+                <div id="popup-text-2"
+                    class="font-fira hidden absolute top-16 right-2 bg-white p-4 rounded shadow-md w-64 text-sm">
+                    Primeiro projeto de site que fiz, utilizando apenas html e
+                    css bootstrap5
+                </div>
+
+                <a href="https://projetolojaulbra.netlify.app/" target="_blank">
+                    <button id="btn-loja-online"
+                        class="font-fira w-full mt-4 p-2 bg-yellow-500 text-black rounded hover:bg-blue-600 duration-300">
+                        Loja Online
+                    </button>
+                </a>
+            </div>
+
+            <!-- Terceira Imagem -->
+            <div
+                class="border border-black w-80 my-5 p-2 hover:scale-110 duration-300 relative">
+                <img src="/assets/img/sayajinp.jpeg" alt="Imagem">
+
+                <!-- Ícone de Interrogação -->
+                <div
+                    class="absolute top-2 right-2 p-2 rounded-full text-white cursor-pointer"
+                    onclick="togglePopup('popup-text-3')">
+                    <i class="fa fa-question-circle"
+                        style="font-size:24px;"></i>
+                </div>
+
+                <!-- Caixa de Texto -->
+                <div id="popup-text-3"
+                    class="font-fira hidden absolute top-16 right-2 bg-white p-4 rounded shadow-md w-64 text-sm">
+                    Criei um WebService CRUD de Clientes utilizando Spring Boot
+                    e listas em memória, com operações via GET, POST, PUT e
+                    DELETE.
+                    A API também oferece funcionalidades para filtrar por ID e
+                    idade. Tudo é testado com Postman ou Insomnia.
+                </div>
+
+                <a href="https://github.com/MarceloBastosDev/CRUDJavaSpringBoot" target="_blank">
+                    <button id="btn-crud-springboot"
+                        class="font-fira w-full mt-4 p-2 bg-yellow-500 text-black rounded hover:bg-blue-600 duration-300">
+                        CRUD Java com SpringBoot
+                    </button>
+                </a>
+            </div>
+
+            <div class="fixed right-3 top-20 md:top-24 flex space-x-4">
+                <div>
+                    <button onclick="changeLanguage('pt')"
+                        class="bg-green-500 text-sm p-3 rounded-full shadow-md hover:scale-110 duration-300 transform"
+                        id="btn-pt"><img src="/assets/icons/brasil.png"
+                            alt="Português Brasil" class="w-8 h-8">
+                    </button>
+                </div>
+
+                <button onclick="changeLanguage('en')"
+                    class="bg-red-500 text-black text-sm p-3 rounded-full shadow-md hover:scale-110 duration-300 transform"
+                    id="btn-en"><img src="/assets/icons/engilsh.png"
+                        alt="English" class="w-8 h-8">
+                </button>
+            </div>
+
+        </div>
+
+        <script src="/js/locales/languageindex.js"></script>
+        <script src="/js/script.js"></script>
+
+    </body>
+</html>
