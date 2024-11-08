@@ -12,7 +12,7 @@ i18next.init({
                 "PT": "Português",
                 "EN": "Inglês",
                 "Descrição": "Desenvolvedor Front-End/Back-End",
-                "Sobre": "Olá! Meu nome é Marcelo Bastos, Sou Desenvolvedor Full-Stack. Iniciei meu aprendizado no início de 2023, presencialmente pela universidade ULBRA - Torres/RS. Além disso, venho aprender através de cursos online para melhorar minhas habilidades, certificando-me de que aprendi o suficiente para explorar as mais novas tecnologias.",
+                "Sobre": "Olá! Meu nome é Marcelo Bastos, Sou Desenvolvedor Full-Stack. Iniciei meu aprendizado no início de 2023, presencialmente pela universidade ULBRA - Torres/RS. Além disso, venho aprendendo através de cursos online para melhorar minhas habilidades, me certificando de que estou aprendendo o suficiente para explorar as mais novas tecnologias.",
                 "Tecnologias": "Aqui estão algumas das tecnologias que possuo conhecimento:",
                 "Curriculo Menu": "Curriculo HTML",
                 "Skill": "Habilidades",
