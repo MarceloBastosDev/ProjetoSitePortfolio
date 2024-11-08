@@ -12,12 +12,14 @@ i18next.init({
                 "PT": "Português",
                 "EN": "Inglês",
                 "popup1": "Projetei um site responsivo utilizando HTML, CSS Tailwind, e JavaScript.",
+                "popup0": "Utilizando novamente HTML, CSS Tailwind e JavaScript. Projetando esse site para uma empresa Estou na minha cidade. AINDA EM CONSTRUÇÃO",
                 "popup2": "Primeiro projeto de site que fiz, utilizando apenas html e css bootstrap5",
                 "popup3": "Criei um WebService CRUD de Clientes utilizando Spring Boot e listas em memória, com operações via GET, POST, PUT e DELETE. A API também oferece funcionalidades para filtrar por ID e idade. Tudo é testado com Postman ou Insomnia",
                 "Curriculo Menu": "Curriculo HTML",
                 "Skill": "Habilidades",
                 "CurriculoDevice": "Curriculo HTML",
-                "SobreDevice": "Sobre mim"
+                "SobreDevice": "Sobre mim",
+
             }
         },
         en: {
@@ -31,12 +33,14 @@ i18next.init({
                 "PT": "Portuguese",
                 "EN": "English",
                 "popup1": "I designed a responsive website using HTML, CSS Tailwind, and JavaScript.",
+                "popup0": "Again using HTML, Tailwind CSS and JavaScript.Designing this website for a company I'm in my city. STILL UNDER CONSTRUCTION",
                 "popup2": "First website project I made, using only HTML and CSS with Bootstrap5.",
                 "popup3": "I created a Client CRUD WebService using Spring Boot and in-memory lists, with operations via GET, POST, PUT, and DELETE. The API also offers functionality to filter by ID and age. Everything is tested with Postman or Insomnia.",
                 "Curriculo Menu": "Professional Resume",
                 "Skill": "Skill",
                 "CurriculoDevice": "Professional Resume",
-                "SobreDevice": "About me"
+                "SobreDevice": "About me",
+
             }
         }
     }
@@ -47,7 +51,7 @@ i18next.init({
 
 function updateContent() {
     // Atualiza os links principais
-    
+
     document.querySelector('a[href="/index.html"]').textContent = i18next.t('Portfolio');
     document.querySelector('a[href="/src/sobremim.html"]').textContent = i18next.t('Sobre Mim');
     document.querySelector('a[href="/src/skills.html"]').textContent = i18next.t('Skills');
@@ -61,6 +65,7 @@ function updateContent() {
 
     // Atualiza os popups
     document.querySelector('#popup-text-1').textContent = i18next.t('popup1');
+    document.querySelector('#popup-text-0').textContent = i18next.t('popup0');
     document.querySelector('#popup-text-2').textContent = i18next.t('popup2');
     document.querySelector('#popup-text-3').textContent = i18next.t('popup3');
 
