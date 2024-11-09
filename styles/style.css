@@ -25,6 +25,18 @@
     }
 }
 
+.git {
+    width: 1rem !important;
+    height: 1rem !important;
+    
+    
+    /* Torna a borda arredondada */
+}
+paddingt{
+    padding-top: 2px;
+}
+
+
 /* Estilos para troca de imagem */
 .hover-image-container {
     position: relative;
